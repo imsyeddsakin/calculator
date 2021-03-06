@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel= "stylesheet" href="style.css">
+        <link rel="icon" href="logo.png">
+    </head>
+    <body>
+        <div class="table">
+            <form name="values">
+                Num1: <input type="text" name="fstnum">
+                <br>
+                Num2: <input type="text" name="sndnum">
+                <br>
+                Answer:  <input type="text" name="ans">
+                <br>
+                <br>
+                <input type="button" value="Sum" onClick="sumValues()">
+                <input type="button" value="Sub" onClick="subValues()">
+                <input type="button" value="Mul" onClick="mulValues()">
+                <input type="button" value="Div" onClick="divValues()">
+                <input type="button" value="%" onClick="perValues()">
+            </form>
+        </div>
+    </body>
+        <script type="text/javascript">
+            
+            function sumValues(){
+                var num1, num2;
+                num1= Number(document.values.fstnum.value);
+                num2= Number(document.values.sndnum.value);
+                document.values.ans.value=num1+num2;
+            }
+            
+            function subValues(){
+                var num1, num2;
+                num1= Number(document.values.fstnum.value);
+                num2= Number(document.values.sndnum.value);
+                document.values.ans.value=num1-num2;
+            }
+            
+            function mulValues(){
+                var num1, num2;
+                num1= Number(document.values.fstnum.value);
+                num2= Number(document.values.sndnum.value);
+                document.values.ans.value=num1*num2;
+            }
+            
+            function divValues(){
+                var num1, num2;
+                num1= Number(document.values.fstnum.value);
+                num2= Number(document.values.sndnum.value);
+                document.values.ans.value=num1/num2;
+            }
+            
+            function perValues(){
+                var num1, num2;
+                num1= Number(document.values.fstnum.value);
+                num2= Number(document.values.sndnum.value);
+                document.values.ans.value=num1*(num2/100);
+            }
+        </script>
+    
+</html>
